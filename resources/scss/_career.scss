@@ -1,0 +1,190 @@
+.career-info-page {
+    display: flex;
+    .career-location {
+        max-width: 29rem;
+        .city {
+            align-items: baseline;
+            img {
+                margin-top: 0.4rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.info-page-block {
+    .career-list{
+        margin: 0 auto;
+
+        .career-title {
+            font-family: 'Cormorant Garamond';
+            font-weight: 500;
+            font-size: 2.4rem;
+        }
+
+        .career-info {
+            margin: 2.6rem 0 3.2rem;
+            strong {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1rem;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                margin: 2rem 0;
+            }
+            ul {
+                margin: 1.6rem 1.6rem 2.2rem;
+                li {
+                    list-style: initial;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.3rem;
+                    letter-spacing: 0.44px;
+                }
+            }
+        }
+
+        .career-item.outer {
+            .career-address {
+                max-width: 21rem;
+            }
+            a.lider {
+                background: $bg-light-grey;
+                box-sizing: border-box;
+                padding: 4rem 3rem;
+                margin-bottom: 2rem;
+                box-shadow: 0px 3px 4px rgba(2, 3, 3, 0.03), 0px 3px 3px rgba(2, 3, 3, 0.02), 0px 1px 8px rgba(2, 3, 3, 0.04);
+                transition: .2s background ease-in-out;
+                gap: 4rem;
+
+                &:hover {
+                    background: $white;
+                    cursor: pointer;
+                }
+            }
+
+            h3 {
+                font-size: 1.6rem;
+                font-weight: 500;
+                margin: 0 0 2rem 0;
+            }
+
+            .description {
+                font-size: 1.3rem;
+                color: $text-black;
+                line-height: 2rem;
+            }
+
+            .city {
+                text-align: right;
+                font-size: 1.3rem;
+                justify-content: flex-end;
+
+                img {
+                    width: 1rem;
+                    margin-right: 1rem;
+                }
+            }
+
+            .company-logo {
+                margin-top: 2rem;
+            }
+        }
+
+    }
+}
+
+.vacancy-different {
+    background: linear-gradient(192.15deg, #F4F4F4 5.68%, rgba(219, 227, 237, 0) 109%);
+    box-sizing: border-box;
+    padding: 4rem 4.8rem 4.8rem;
+    max-width: 40rem;
+
+    h4 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 2rem;
+        margin: 0 0 2rem 0;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 1.3rem;
+        color: $text-black;
+        line-height: 2rem;
+    }
+
+    a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1.5rem 2rem;
+        color: $text-black;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-radius: .2rem;
+        border: 1px solid $text-black;
+        margin-top: 4rem;
+        text-align: center;
+    }
+}
+
+.career-item.inner {
+    background: none;
+    box-shadow: none;
+
+    .description {
+        font-size: 1.3rem;
+        color: $text-black;
+        line-height: 2rem;
+    }
+
+    .city {
+        text-align: right;
+        font-size: 1.3rem;
+        justify-content: flex-end;
+
+        img {
+            width: 1rem;
+            margin-right: 1rem;
+        }
+    }
+
+    .company-logo {
+        margin-top: 2rem;
+    }
+
+    h3 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 2.4rem;
+        font-weight: 500;
+        margin: 0 0 4rem 0;
+    }
+
+    .block {
+        margin-bottom: 4rem;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        p {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            margin: 0 0 2rem 0;
+        }
+
+        ul {
+            padding-left: 2rem;
+
+            li {
+                list-style: initial;
+                margin-bottom: 1rem;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+}

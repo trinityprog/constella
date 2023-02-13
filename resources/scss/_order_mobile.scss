@@ -1,0 +1,66 @@
+@media only screen and (max-width: 1024px) {
+    .step-page {
+        .step-page-block {
+            background: $white;
+        }
+
+        .container .form {
+            margin: 0;
+        }
+
+        .step-page-form {
+            display: block;
+            width: 100%;
+            background: #ffffff;
+            background-size: cover;
+            padding: 6rem 5rem 0 5rem;
+
+            .step-page-form__title {
+                font-family: Cormorant Garamond;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 3rem;
+                margin-top: 0;
+                margin-bottom: 4rem;
+            }
+
+            .form-group {
+                position: relative;
+                margin-bottom: 3rem;
+                margin-top: 3rem !important;
+
+                .step-page-form__template-input {
+                    font-size: 1.6rem;
+                }
+                .continue {
+                    font-weight: bold;
+                    font-size: 1.6rem;
+                    display: flex;
+                    justify-content: center;
+                    letter-spacing: 0.75px;
+                    text-transform: uppercase;
+                    color: $text-black;
+                    text-decoration: none;
+                    margin: 18rem 0 5rem 0;
+                }
+            }
+
+            .link {
+                position: absolute;
+                font-weight: 600;
+                font-size: 1.5rem;
+                text-decoration: none;
+                color: $text-black;
+                right: 0rem;
+                top: 1rem;
+            }
+
+            .top {
+                margin-top: 28rem;
+            }
+        }
+    }
+}
+
+
+

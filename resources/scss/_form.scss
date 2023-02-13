@@ -1,0 +1,231 @@
+.form.styled {
+
+    &.minified {
+        width: 60rem;
+        margin: 0 auto;
+    }
+
+    .form-duo {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-gap: 2rem;
+    }
+
+    .form-divider {
+        width: 100%;
+        height: 1px;
+        background: rgba(174, 174, 174, 0.3);
+        margin-bottom: 4rem;
+    }
+
+    .form-group {
+        margin-bottom: 3rem;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .double {
+            input {
+                margin-right: 2rem;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &.checkbox {
+            a {
+                color: $text-black;
+            }
+
+            label {
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding-left: 5rem;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+
+                &.wider {
+                    padding-left: 5rem;
+                }
+
+                span a {
+                    line-height: 1.6rem;
+                    font-weight: 600;
+                }
+            }
+
+            label input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+
+            .checkmark {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                height: 3rem;
+                width: 3rem;
+                background: rgba(184, 167, 177, 0.3);
+                border-radius: 50%;
+                transform: translateY(-50%);
+            }
+
+            label input:checked ~ .checkmark {
+                background-color: $white;
+            }
+
+            .checkmark:after {
+                content: "";
+                display: block;
+                width: 1.4rem;
+                height: 1.4rem;
+                background: $white;
+                border-radius: 50%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+            }
+
+            label input:checked ~ .checkmark:after {
+                display: block;
+                background: url('../i/icons/check.svg') center center no-repeat $black;
+            }
+        }
+
+        &.selects {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 6rem .5rem 6rem;
+            box-sizing: border-box;
+
+            a {
+                color: $text-black;
+                font-size: 1.2rem;
+                font-weight: 500;
+                text-decoration: none;
+                border-bottom: 1px solid transparent;
+                padding-bottom: .5rem;
+                margin-right: 10rem;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+
+                &.active {
+                    border-bottom-color: $text-black;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .infoed {
+            position: relative;
+
+            &.trans {
+                .info-tooltip {
+                    transform: translateY(-50%);
+                    top: 50%;
+                }
+            }
+
+            .info-tooltip {
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: block;
+                z-index: 100;
+
+                svg path {
+                    transition: .2s ease-in-out;
+                }
+
+                &:hover {
+                    svg path:nth-of-type(1) {
+                        fill: $text-black;
+                    }
+                }
+            }
+        }
+    }
+
+    .head {
+        font-weight: 700;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+
+        img {
+            margin-right: 1rem;
+        }
+    }
+
+    button {
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    label {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+        display: block;
+        color: $text-black;
+
+        span {
+            color: $menu-divider;
+        }
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid $text-black;
+        font-size: 1.2rem;
+        background: none;
+        width: 100%;
+        box-sizing: border-box;
+        outline: none;
+        padding: .8rem 0;
+
+        &::placeholder { color: $menu-grey; font-size: 1.2rem; }
+
+        &.password {
+            padding-right: 12rem;
+        }
+    }
+
+}
+
+[aria-label][role~="tooltip"]::after {
+    background: $white;
+    color: $text-black;
+    font-size: 1.2rem;
+    padding: 3rem;
+    box-shadow: 0px 4px 15px rgba(155, 157, 162, 0.3);
+    border-radius: .2rem;
+    line-height: 1.8rem;
+    max-width: 35rem;
+    margin-left: 2rem;
+    z-index: 500;
+}
+[aria-label][role~="tooltip"]::before {
+    z-index: 100;
+    background: url('../i/icons/left-arrow-white.svg') center center no-repeat;
+    height: 2.2rem;
+    width: 1rem;
+    margin-bottom: 0;
+    margin-left: 1rem;
+}

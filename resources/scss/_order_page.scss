@@ -1,0 +1,66 @@
+@media only screen and (max-width: 1024px) {
+    .page-order {
+        .container {
+            background: $white;
+            .check-before-pay {
+                .per-block {
+                    .m-title {
+                        font-weight: bold;
+                        font-size: 1.25rem;
+                        letter-spacing: 1.5px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .content-order {
+                &__title {
+                    padding: 3rem 3.3rem;
+                }
+            }
+            .left-arrow {
+                margin: 2.5rem;
+            }
+            .page-order-status {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                .page-order-title {
+                    font-family: Cormorant Garamond;
+                    font-weight: 500;
+                    font-size: 3rem;
+                    margin-bottom: 0;
+                }
+                .stage {
+                    width: max-content;
+                    padding: 1.5rem 2rem;
+                    background: #FAFAFA;
+                    border-radius: 32px;
+                    font-weight: 600;
+                    margin-bottom: 5rem;
+                }
+            }
+            .content-order {
+                .cart-item {
+                    margin-bottom: 3rem;
+                    .cart-count {
+                        font-weight: bold;
+                    }
+                }
+            }
+            .order-info {
+                padding: 6.25rem 3.3rem;
+                .order-list {
+                    padding-bottom: 5rem;
+                    .order-title {
+                        font-weight: bold;
+                        font-size: 1.25rem;
+
+                        letter-spacing: 1.5px;
+                        text-transform: uppercase;
+                        padding-bottom: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

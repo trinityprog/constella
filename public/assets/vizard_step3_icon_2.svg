@@ -1,0 +1,21 @@
+<svg width="80" height="80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="b">
+      <stop stop-color="#FFF" stop-opacity="0" offset="0%"/>
+      <stop stop-color="#FFF" stop-opacity=".957" offset="100%"/>
+    </linearGradient>
+    <radialGradient cx="68.982%" fx="68.982%" fy="50%" r="111.092%" gradientTransform="rotate(73.787 .459 .327) scale(1 .30683)" id="c">
+      <stop stop-color="#FFF" stop-opacity=".5" offset="0%"/>
+      <stop stop-color="#DCDCDC" stop-opacity=".514" offset="100%"/>
+    </radialGradient>
+    <circle id="a" cx="140" cy="416" r="40"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(-100 -376)">
+      <use fill="#E5E5E5" xlink:href="#a"/>
+      <use fill="url(#b)" xlink:href="#a"/>
+      <circle stroke="#FFF" stroke-width="6" stroke-linejoin="square" fill="url(#c)" cx="140" cy="416" r="37"/>
+      <circle stroke="#EDEDED" stroke-width="2" stroke-linejoin="square" cx="140" cy="416" r="39"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,141 @@
+.info-page-nav.partnership {
+    max-width: 15rem;
+
+    .info-page-list__link {
+        justify-content: space-between;
+
+        &.active .info-page-list__text {
+            color: $text-black;
+        }
+    }
+
+    .info-page-list__text {
+        font-size: 1rem;
+        font-weight: 700;
+        color: lighten($text-black, 50%);
+        transition: .2s color ease-in-out;
+
+        &:hover {
+            color: $text-black;
+        }
+    }
+
+    .info-page-tab__mark {
+        display: block;
+        position: relative;
+        width: 14px;
+        height: 14px;
+
+
+        &-item {
+            transition: 0.3s all;
+            width: 14px;
+            height: 2px;
+            display: block;
+            position: absolute;
+            top: 6px;
+            left: 0;
+            background-color: $plus-grey;
+        }
+
+        &-item:first-child {}
+
+        &-item:last-child {
+            transform: rotateZ(90deg);
+
+            &.active {
+                background-color: $text-dark-grey;
+                transform: rotateZ(0deg);
+            }
+        }
+    }
+
+}
+
+
+
+.partnership-page {
+
+    .info-page-block {
+        background: $bg-light-grey;
+        max-width: 100%;
+        margin-right: -1.6%;
+        margin-left: 0;
+
+        .partner-info {
+            flex: 1;
+            display: flex;
+            align-items: stretch;
+            flex-direction: column;
+            box-sizing: border-box;
+
+            .pi-bottom {
+                box-sizing: border-box;
+                padding: 4rem 5rem;
+                border-top: 7px solid $white;
+                font-size: 1.2rem;
+                color: $text-dark-grey;
+                line-height: 1.6rem;
+            }
+
+            .pi-top {
+                padding: 10rem 8rem;
+                box-sizing: border-box;
+                flex: 1;
+
+                &:nth-of-type(2) {
+                    border-top: 7px solid $white;
+                }
+
+                p.sub-text {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    line-height: 1.6rem;
+                    color: $text-dark-grey;
+                    margin-top: 2rem;
+                }
+
+                p.text {
+                    margin: 0 0 5rem 0;
+                    text-align: center;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    font-family: "Cormorant Garamond", serif;
+                }
+
+                .form {
+                    width: 80%;
+
+                    .form-group {
+                        margin-bottom: 5rem;
+
+                        &:last-of-type {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    input {
+                        text-align: center;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        border-bottom: none;
+                        padding: 1rem 0;
+                        background: url('../i/line.png') bottom center / contain no-repeat;
+                    }
+                }
+            }
+        }
+
+        .partner-image {
+            max-width: 60%;
+
+            img {
+                max-width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+
+}

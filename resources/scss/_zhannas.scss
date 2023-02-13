@@ -1,0 +1,120 @@
+.zhannas-letter-page {
+    padding: 5rem 0;
+
+    .zhannas-letter-block {
+        background: $white;
+        box-shadow: 0px 4px 35px rgba(155, 157, 162, 0.3);
+        width: 135rem;
+        margin: 0 auto;
+        padding: 4rem 8rem 4rem 4rem;
+        box-sizing: border-box;
+        border-radius: 1rem;
+        display: grid;
+        grid-template-columns: 40rem 60rem;
+        align-items: center;
+        justify-content: space-between;
+
+        .sign {
+            position: absolute;
+            right: 0;
+            bottom: 15%;
+            transform: translateX(70%) rotate(-15deg);
+
+            svg {
+                width: 25rem;
+                height: 12rem;
+            }
+        }
+
+        .image {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        h3 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 3.6rem;
+            margin: 0 0 4rem 0;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        p {
+            font-family: "Montserrat", sans-serif;
+            font-style: italic;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.8rem;
+
+            span.capital {
+                font-family: "Cormorant Garamond", serif;
+                font-size: 5rem;
+                font-style: normal;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .zhannas-letter-page {
+        padding: 0;
+
+        .zhannas-letter-block {
+            background: $white;
+            box-shadow: unset;
+            margin: unset;
+            width: 100% !important;
+            padding: 0 3.3rem!important;
+            box-sizing: border-box;
+            border-radius: unset;
+            display: flex;
+            flex-direction: column;
+
+            .sign {
+                position: absolute;
+                right: 9rem;
+                bottom: 26%;
+                transform: translateX(70%) rotate(-15deg);
+
+                svg {
+                    width: 15.5rem;
+                    height: 12rem;
+                }
+            }
+
+            .image {
+                position: relative;
+                padding: 2rem 6rem 2rem 0rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            h3 {
+                font-family: "Cormorant Garamond", serif;
+                font-size: 3rem;
+                margin: 0 0 4rem 0;
+                font-weight: 500;
+                text-align: center;
+            }
+
+            p {
+                font-family: "Montserrat", sans-serif;
+                font-style: italic;
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 1.8rem;
+
+                span.capital {
+                    font-family: "Cormorant Garamond", serif;
+                    font-size: 5rem;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}

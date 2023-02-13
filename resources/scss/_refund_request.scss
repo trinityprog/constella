@@ -1,0 +1,80 @@
+@media only screen and (max-width: 1024px) {
+    .refund-request {
+        .title-1 {
+            padding: 2rem 3rem;
+            margin: 0;
+            font-family: Cormorant Garamond;
+            font-weight: 500;
+            font-size: 2.4rem;
+            display: flex;
+            background: $bg-grey-lighter;
+            border-bottom: 0.5px solid $text-black;
+
+            .img {
+                margin-left: auto;
+            }
+        }
+        .refund-request-info {
+            text-align: center;
+            .refund-request-title {
+                font-family: Cormorant Garamond;
+                font-weight: 500;
+                font-size: 3rem;
+            }
+            .refund-request-item {
+                margin: 6.25rem 0;
+                .head {
+                    font-weight: bold;
+                    font-size: 1.25rem;
+                    letter-spacing: 1.5px;
+                    text-transform: uppercase;
+                }
+                .text {
+                    letter-spacing: 0.7px;
+                }
+            }
+        }
+        .form {
+            margin: 0;
+            .form-group {
+                margin: 3rem;
+            }
+            .user-btns {
+                display: flex;
+                flex-direction: column;
+                padding: 2.5rem 3.3rem;
+                background: $bg-grey-lighter;
+                button {
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+        .attention {
+            padding: 6.25rem 3.3rem;
+            background: #F6F6F6;
+            .flex {
+                justify-content: center;
+                img {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    margin-top: 2rem;
+                    margin-right: 1.5rem;
+                }
+            }
+            .text {
+                line-height: 22px;
+            }
+            .link {
+                display: block;
+                text-align: center;
+                padding-top: 6.25rem;
+
+                font-weight: bold;
+                font-size: 1.25rem;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                color: $text-black;
+            }
+        }
+    }
+}

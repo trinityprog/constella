@@ -1,0 +1,56 @@
+<svg width="40" height="48" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <path d="M16.812 15.34a8.003 8.003 0 0 1-2.014-1.262c-.987-.455-1.91-.683-2.766-.683-.976 0-1.537 1.404-3.127 2.233-.503.262-1.566.417-3.19.466 1.142-2.314 1.768-4.647 1.879-6.997.165-3.526-1.493-3.185-1.308-5.19C6.47 1.902 8.24.863 10.175.863c1.226 0 2.464.658 3.715 1.973A7.983 7.983 0 0 1 20 0a7.983 7.983 0 0 1 6.11 2.836C27.361 1.521 28.6.863 29.825.863c1.935 0 3.705 1.039 3.89 3.044.184 2.005-1.474 1.664-1.309 5.19.11 2.35.737 4.683 1.88 6.997-1.625-.049-2.688-.204-3.19-.466-1.591-.829-2.152-2.233-3.128-2.233-.857 0-1.779.228-2.766.683-.6.515-1.279.942-2.014 1.262l15.098 3.637-.59 1.727C39.01 20.955 40 22.086 40 23.442c0 1.541-1.28 2.79-2.857 2.79-.444 0-.865-.098-1.24-.275l-.474 1.392-9.143-1.675 8 17.86-1.864.135c.097.31.15.64.15.982 0 1.85-1.536 3.349-3.43 3.349-1.893 0-3.428-1.5-3.428-3.349 0-.193.017-.382.05-.566H20v-.517.517h-5.763c.032.184.049.373.049.566 0 1.85-1.535 3.349-3.429 3.349-1.893 0-3.428-1.5-3.428-3.349 0-.342.052-.671.15-.982l-1.865-.134 8-17.86-9.143 1.674-.475-1.392a2.902 2.902 0 0 1-1.239.276C1.28 26.233 0 24.983 0 23.442c0-1.356.99-2.487 2.304-2.738l-.59-1.727 15.098-3.637z" fill="#D8D8D8"/>
+    <g transform="translate(1 1)" fill="#B6B6B6" stroke="#D8D8D8">
+      <circle stroke-width=".3" cx="14.5" cy="26" r="1.85"/>
+      <circle stroke-width=".3" cx="23.5" cy="26" r="1.85"/>
+      <circle stroke-width=".3" cx="19" cy="17" r="1.85"/>
+      <circle stroke-width=".3" cx="19" cy="21" r="1.85"/>
+      <circle stroke-width=".3" cx="14" cy="21" r="1.85"/>
+      <circle stroke-width=".3" cx="6" cy="23" r="1.85"/>
+      <circle stroke-width=".3" cx="10" cy="22" r="1.85"/>
+      <circle stroke-width=".3" cx="14" cy="17" r="1.85"/>
+      <circle stroke-width=".3" cx="6" cy="19" r="1.85"/>
+      <circle stroke-width=".3" cx="10" cy="18" r="1.85"/>
+      <circle stroke-width=".3" transform="matrix(-1 0 0 1 48 0)" cx="24" cy="21" r="1.85"/>
+      <circle stroke-width=".3" transform="matrix(-1 0 0 1 64 0)" cx="32" cy="23" r="1.85"/>
+      <circle stroke-width=".3" transform="matrix(-1 0 0 1 56 0)" cx="28" cy="22" r="1.85"/>
+      <circle stroke-width=".3" transform="matrix(-1 0 0 1 48 0)" cx="24" cy="17" r="1.85"/>
+      <circle stroke-width=".3" transform="matrix(-1 0 0 1 64 0)" cx="32" cy="19" r="1.85"/>
+      <circle stroke-width=".3" transform="matrix(-1 0 0 1 56 0)" cx="28" cy="18" r="1.85"/>
+      <circle stroke-width=".3" cx="14" cy="39" r="1.85"/>
+      <circle stroke-width=".3" cx="19" cy="39" r="1.85"/>
+      <circle stroke-width=".3" cx="24" cy="39" r="1.85"/>
+      <circle stroke-width=".3" cx="29" cy="39" r="1.85"/>
+      <circle stroke-width=".3" cx="9" cy="39" r="1.85"/>
+      <circle stroke-width=".3" cx="15" cy="34" r="1.85"/>
+      <circle stroke-width=".3" cx="19" cy="34" r="1.85"/>
+      <circle stroke-width=".3" cx="23" cy="34" r="1.85"/>
+      <circle stroke-width=".3" cx="27" cy="35" r="1.85"/>
+      <circle stroke-width=".3" cx="11" cy="35" r="1.85"/>
+      <circle stroke-width=".3" cx="14" cy="30" r="1.85"/>
+      <circle stroke-width=".3" cx="19" cy="30" r="1.85"/>
+      <circle stroke-width=".3" cx="19" cy="26" r="1.85"/>
+      <circle stroke-width=".3" cx="24" cy="30" r="1.85"/>
+      <circle stroke-width=".3" cx="10" cy="44" r="1.85"/>
+      <circle stroke-width=".3" cx="2" cy="22.5" r="1.85"/>
+      <circle stroke-width=".3" cx="36" cy="22.5" r="1.85"/>
+      <circle stroke-width=".3" cx="28" cy="44" r="1.85"/>
+      <circle stroke-width=".2" cx="19" cy="2" r="1.9"/>
+      <circle stroke-width=".2" cx="19" cy="7" r="2.4"/>
+      <circle stroke-width=".2" cx="25" cy="7" r="1.9"/>
+      <circle stroke-width=".2" cx="13" cy="7" r="1.9"/>
+      <circle stroke-width=".2" cx="9" cy="7" r="1.9"/>
+      <circle stroke-width=".2" cx="8.5" cy="11" r="1.9"/>
+      <circle stroke-width=".2" cx="9" cy="3" r="1.9"/>
+      <circle stroke-width=".2" transform="matrix(-1 0 0 1 58 0)" cx="29" cy="7" r="1.9"/>
+      <circle stroke-width=".2" transform="matrix(-1 0 0 1 59 0)" cx="29.5" cy="11" r="1.9"/>
+      <circle stroke-width=".2" transform="matrix(-1 0 0 1 58 0)" cx="29" cy="3" r="1.9"/>
+      <circle stroke-width=".2" cx="15" cy="3" r="1.9"/>
+      <circle stroke-width=".2" cx="23" cy="3" r="1.9"/>
+      <circle stroke-width=".2" cx="15" cy="11" r="1.9"/>
+      <circle stroke-width=".2" cx="23" cy="11" r="1.9"/>
+      <circle stroke-width=".2" cx="19" cy="12" r="1.9"/>
+    </g>
+  </g>
+</svg>

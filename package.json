@@ -1,0 +1,45 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "axios": "^0.21.4",
+        "browser-sync": "^2.27.5",
+        "browser-sync-webpack-plugin": "^2.3.0",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.21",
+        "postcss": "^8.1.14",
+        "resolve-url-loader": "^4.0.0",
+        "sass": "^1.38.0",
+        "sass-loader": "^12.1.0",
+        "vue-loader": "^15.9.8",
+        "vue-template-compiler": "^2.6.14",
+        "stylus-loader": "^3.0.2"
+    },
+    "dependencies": {
+        "core-js": "^2.6.5",
+        "inputmask": "^5.0.6",
+        "jquery": "^3.6.0",
+        "jquery-lazy": "^1.7.11",
+        "js-cookie": "^3.0.1",
+        "microtip": "^0.2.2",
+        "normalize.css": "^8.0.1",
+        "nouislider": "^15.4.0",
+        "remodal": "^1.1.1",
+        "stylus": "^0.56.0",
+        "swiper": "^6.8.2",
+        "vue": "^2.6.10",
+        "vue-the-mask": "^0.11.1",
+        "vuedraggable": "^2.23.1",
+        "vuex": "^3.1.1",
+        "vuex-persistedstate": "^2.7.1",
+        "wnumb": "^1.2.0"
+    }
+}

@@ -1,0 +1,352 @@
+#menuToggle
+{
+    display: block;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input[type=checkbox]
+{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 16px;
+    left: -6px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: 10005;
+}
+
+#menuToggle span.line
+{
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-bottom: 3px;
+    position: relative;
+
+    background: $text-black;
+    border-radius: 3px;
+
+    z-index: 10004;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span.line
+{
+    opacity: 1;
+    transform: rotate(45deg) translate(-5.5px, -3px);
+    background: #232323;
+    position: fixed;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+    transform: rotate(-45deg) translate(-3.5px, 2.5px);
+}
+
+#menu
+{
+    display: block;
+    position: fixed!important;
+    width: 110%;
+    left: -5%;
+    min-height: 100vh;
+    margin: 0;
+    z-index: 10000;
+    top: 0;
+
+    background: $white;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    transform-origin: 0% 0%;
+    transform: translate(-120%, 0);
+
+    transition: transform 0.7s;
+}
+
+
+#menuToggle input:checked ~ div
+{
+    transform: none;
+}
+
+.menu-content {
+    position: relative;
+    height: 91vh;
+    overflow-x: scroll;
+}
+
+.menu-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.2rem 4.3rem;
+    .lr-block {
+        margin-left: auto!important;
+        font-weight: 600;
+        font-size: 1.2rem;
+        letter-spacing: 0.09em;
+        a {
+            text-decoration: none;
+            color: $text-black;
+            img {
+                margin-right: 1rem;
+            }
+        }
+    }
+    .menu-logo {
+        position: absolute;
+        margin-top: 2rem;
+    }
+    .dropdown {
+        margin-left: auto;
+        position: unset;
+
+        .droppable {
+            top: calc(100% + -4.8rem);
+            display: none;
+            width: 100%;
+            padding: 0;
+            left: 0;
+            .close-dropdown {
+                margin: 2rem 1rem;
+            }
+            .login-register {
+                width: 100%;
+                height: 100vh;
+
+                .divider {
+                    width: max-content;
+                    a {
+                        flex: 1;
+                    }
+                }
+
+                .flex {
+                    a {
+                        font-family: Cormorant Garamond;
+                        font-weight: 500;
+                        font-size: 3.25rem;
+                        margin: 3.3rem 0 3.3rem 4.3rem;
+                    }
+                }
+                .input-top {
+                    margin-top: 3rem;
+                }
+                .divider {
+
+                }
+                .divider-content {
+                    margin-top: 0!important;
+                    padding: 0 4.3rem;
+                    .form {
+                        .form-group {
+                            margin: 0 0 1rem 0;
+                        }
+                        .forgot-password {
+                            text-transform: capitalize;
+                            font-weight: 500;
+                            color: $text-black;
+                        }
+                    }
+                    .register {
+                        .form-group {
+                            margin-top: 3rem!important;
+                        }
+                        .checkbox {
+                            .checkmark {
+                                margin-top: 0;
+                            }
+                            input#rules-accept {
+                                top: 0.5rem;
+                                left: 3rem;
+                            }
+                            p {
+                                margin-left: 3rem;
+                            }
+                        }
+                    }
+                    .welcome {
+                        position: absolute;
+                        padding: 2rem;
+                        bottom: 0;
+                        width: calc(100% + 4rem);
+                    }
+                }
+            }
+        }
+        .element {
+            font-weight: bold;
+            font-size: 1.25rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: $text-black;
+            img {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.menu-section {
+    margin-top: 5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 10rem;
+
+    .sex {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 3.3rem;
+        margin-bottom: 7.5rem;
+
+        .menu-link {
+            display: block !important;
+            font-weight: bold !important;
+            font-size: 1.5rem;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+        }
+    }
+
+    .mobile-slideover {
+        margin-bottom: 2rem;
+    }
+
+    .title {
+        display: flex;
+        width: 100%;
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 1.2rem;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $text-black;
+        margin: 0;
+        padding: 2rem 4.3rem 2rem 3.3rem;
+        transition: .3s ease-in-out;
+
+        &.active {
+            background: black;
+            color: white;
+            transition: .3s ease-in-out;
+        }
+    }
+
+    .nav-item {
+        padding: 4rem 4.3rem 4rem 3.3rem;
+        background: $bg-grey-lighter;
+
+            a {
+                display: flex;
+                justify-content: space-between;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 1.2rem;
+                letter-spacing: 0.09em;
+                text-transform: uppercase;
+                color: $text-black;
+                padding: 0 0 2rem;
+            }
+
+            .sub-menu {
+                display: block;
+                position: absolute;
+                width: 105%;
+                left: -5%;
+                height: 100vh;
+                margin: 0;
+                z-index: 5;
+                top: 0;
+                background: $white;
+            }
+    }
+
+    .dropdown {
+        .link {
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 1.2rem;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $text-black;
+            margin: 0;
+            padding: 2rem 3.3rem;
+        }
+
+        .droppable {
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: calc(100% + -31rem);
+            box-sizing: border-box;
+            padding: 7rem 3rem;
+
+            .picker {
+                .text {
+                    color: $text-black;
+                }
+            }
+
+            .selectable {
+                width: 100%;
+                justify-content: space-around;
+            }
+        }
+
+        .picker {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+}
+
+.menu-footer {
+    background: $bg-grey-lighter;
+    padding: 4rem 4.3rem 4rem;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu-footer-item {
+        font-weight: bold;
+        font-size: 1.25rem;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $text-black;
+
+        svg {
+            margin-right: 1rem;
+        }
+    }
+}
+
+

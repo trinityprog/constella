@@ -1,0 +1,26 @@
+<svg width="80" height="80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="b">
+      <stop stop-color="#FFF" stop-opacity="0" offset="0%"/>
+      <stop stop-color="#FFF" stop-opacity=".697" offset="100%"/>
+    </linearGradient>
+    <radialGradient cy="82.36%" fx="50%" fy="82.36%" r="100%" id="c">
+      <stop stop-color="#D6A636" stop-opacity=".564" offset="0%"/>
+      <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+    </radialGradient>
+    <radialGradient cx="65.534%" cy="42.265%" fx="65.534%" fy="42.265%" r="78.384%" gradientTransform="rotate(81.23 .53 .315) scale(1 .49272)" id="d">
+      <stop stop-color="#FFE19C" stop-opacity=".564" offset="0%"/>
+      <stop stop-color="#FFD46D" offset="100%"/>
+    </radialGradient>
+    <circle id="a" cx="40" cy="416" r="40"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(0 -376)">
+      <use fill="#DAA520" xlink:href="#a"/>
+      <use fill="url(#b)" xlink:href="#a"/>
+      <use fill="url(#c)" style="mix-blend-mode:screen" xlink:href="#a"/>
+      <circle stroke="#FFF" stroke-width="6" stroke-linejoin="square" fill="url(#d)" cx="40" cy="416" r="37"/>
+      <circle stroke="#EDEDED" stroke-width="2" stroke-linejoin="square" cx="40" cy="416" r="39"/>
+    </g>
+  </g>
+</svg>

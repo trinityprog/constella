@@ -1,0 +1,200 @@
+@media only screen and (max-width: 1024px) {
+    .container {
+        padding-top: 0!important;
+        .order-page-contact {
+            .form {
+                margin: 0;
+                .cart-holder {
+                    .holder-left {
+                        .flex {
+                            flex-direction: column;
+                            .order-page-form {
+                                &__item {
+                                    max-width: none;
+                                }
+                                &__title {
+                                    display: none;
+                                }
+                                &__item.another {
+                                    padding-top: 2rem;
+                                    padding-left: 0;
+                                    .order-page-form {
+                                        &__text {
+                                            display: none;
+                                        }
+                                        &__dropdown {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            margin: 0 2.7rem;
+                                            padding-bottom: 3rem;
+                                            .title {
+                                                font-weight: bold;
+                                                font-size: 1.3rem;
+                                                text-transform: uppercase;
+                                            }
+                                        }
+                                        &__slide {
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contacts {
+            font-weight: bold;
+            font-size: 1.3rem;
+            display: flex;
+            justify-content: center;
+            text-transform: uppercase;
+
+            border-bottom: 0.5px solid $text-black;
+            padding: 2.5rem 0;
+            margin-bottom: 6rem;
+
+            .link {
+                text-decoration: none;
+                color: $text-black;
+                .img {
+                    margin-left: auto;
+                    position: absolute;
+                    right: 0;
+                    margin-right: 2.5rem;
+                }
+            }
+            .dropdown {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                .droppable {
+                    top: calc(100% + 2.5rem);
+                    left: 0;
+                    box-sizing: border-box;
+                    padding: 0 3rem;
+                    border-radius: 0 0 1rem 1rem;
+                    z-index: 10000;
+                    &:nth-child(2) {
+                        padding-top: 4.25rem;
+                    }
+                    p {
+                        padding: 0 0 4.25rem 0;
+                        font-weight: 500;
+                        font-size: 1.5rem;
+                        letter-spacing: 0.7px;
+                        margin: 0;
+                    }
+                    a {
+                        font-weight: 500;
+                        font-size: 1.5rem;
+                        letter-spacing: 0.7px;
+                        text-decoration: none;
+                        color: $text-black;
+                    }
+                }
+            }
+        }
+        .form {
+            margin: 3.3rem 0;
+            .form-group {
+                margin: 0 3rem 2.7rem;
+                .infoed {
+                    .info-tooltip {
+                        display: none!important;
+                    }
+                }
+                input {
+                    font-size: 1.4rem;
+                }
+            }
+            .form-address {
+                margin-top: 3rem;
+                .step-page-form__template-input {
+                    font-size: 1.6rem;
+                }
+                input::-webkit-input-placeholder {
+                    font-size:  1.6rem;
+                }
+            }
+        }
+
+        .holder-right {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            background: $bg-grey;
+            padding: 3rem 2rem;
+            border-top: 1px solid $text-black;
+
+            .cart-full-price {
+                margin-top: 0;
+                margin-bottom: 2rem;
+                .total {
+                    font-weight: bold;
+                    font-size: 1.25rem;
+
+                    text-align: center;
+                    letter-spacing: 1.5px;
+                    text-transform: uppercase;
+                    span {
+                        margin-top: 1rem;
+                        display: block;
+                    }
+                }
+            }
+        }
+        .info-page-nav {
+            margin-top: 5.4rem;
+        }
+
+        .partnership {
+            max-width: unset;
+        }
+
+        .info-page-list {
+            padding: 0;
+            background-color: $white!important;
+
+            &__item {
+                margin-bottom: 3rem;
+                list-style: none;
+                &:nth-child(2) {
+                    padding: 2rem 0;
+                    background-color: $bg-grey-lighter;
+                }
+            }
+
+            &__link {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                text-decoration: none;
+                color: $text-black;
+                padding: 0 3.3rem;
+            }
+
+            &__image {
+                margin-right: 1.5rem;
+                width: 1.6rem;
+            }
+
+            &__text {
+                font-size: 1.25rem!important;
+                font-weight: 500;
+                color: $text-black!important;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 0!important;
+            }
+        }
+    }
+    .remodal {
+        .remodal-close {
+            top: 2rem;
+        }
+    }
+}

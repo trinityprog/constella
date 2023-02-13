@@ -1,0 +1,165 @@
+@media only screen and (max-width: 1200px) {
+    .cart-head {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 3.3rem;
+        border-bottom: 0.5px solid $text-black;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .cart-btn {
+        text-align: center;
+        display: flex;
+        margin-bottom: 8rem;
+        .btn-transparent {
+            background: transparent;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: $text-black;
+            text-decoration: none;
+            border: 1px solid $text-black;
+            border-radius: 2px;
+            padding: 3rem 7.5rem;
+            transition: .4s ease-in-out;
+            margin: 0 auto;
+
+            &:hover {
+                background: $text-black;
+                color: $white;
+
+                svg path {
+                    fill: $white;
+                }
+            }
+
+            svg {
+                margin-right: 1rem;
+
+                path {
+                    transition: .4s ease-in-out;
+                }
+            }
+        }
+    }
+
+    .holder-right {
+        z-index: 998!important;
+    }
+
+    .cart-item {
+        padding: 0 3.3rem 0 1.8rem;
+        margin-bottom: 5rem;
+
+        .cart-title {
+            display: flex;
+        }
+
+        &.discounted {
+            .counters {
+                margin-top: 0;
+            }
+        }
+
+    figure {
+        margin: 0 3rem 0 0;
+        height: 15rem;
+        width: 15rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .cart-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            //padding: 2rem 0;
+
+            .title {
+                font-weight: 500;
+                font-size: 2.8rem;
+                flex: 1;
+            }
+
+                .title {
+                    font-weight: 500;
+                    font-size: 2.2rem;
+                }
+
+                .close {
+                    margin-left: auto;
+
+                    svg path {
+                        transition: .4s ease-in-out;
+                    }
+
+                    &:hover {
+                        svg {
+                            path { fill: $menu-grey; }
+                        }
+                    }
+                }
+            }
+
+            .cart-price,
+            .cart-size,
+            .cart-color {
+                letter-spacing: 0.75px;
+                margin: 0.2rem 0;
+            }
+
+            .counters {
+                margin-top: 2rem;
+
+                a {
+                    justify-content: center;
+                    text-decoration: none;
+                    width: 5rem;
+                    height: 4rem;
+                    font-size: 2.2rem;
+                    border-radius: 2px;
+                }
+
+                .minus {
+                    background: $bg-grey;
+                    color: $text-black;
+                }
+
+                .plus {
+                    background: $text-black;
+                    color: $white;
+                }
+
+                span {
+                    text-transform: uppercase;
+                    font-size: 1.7rem;
+                    margin: 0 2rem;
+                    font-weight: 500;
+                    min-width: 2rem;
+                    text-align: center;
+                }
+            }
+
+            .title {
+                font-weight: 500;
+                font-size: 2.2rem;
+                margin-top: 0;
+                font-family: "Cormorant Garamond";
+
+                a {
+                    text-decoration: none;
+                    color: $text-black;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }

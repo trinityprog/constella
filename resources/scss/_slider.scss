@@ -1,0 +1,12 @@
+.index-slider {
+    min-width: 130rem;
+    width: 98%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    .swiper-slide {
+        .slide-image {
+            max-width: 100%;
+        }
+    }
+}

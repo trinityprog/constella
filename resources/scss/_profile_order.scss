@@ -1,0 +1,59 @@
+@media only screen and (max-width: 1024px) {
+    .profile-page {
+        .container {
+            .profile-page-slide.slidedown-element {
+                display: block;
+            }
+            .orders-sort {
+                p, a {
+                    padding: 2rem 4rem;
+                    margin: 0;
+                    border: 0.5px solid $black;
+                    border-left: none;
+                    font-weight: bold;
+                    font-size: 1.25rem;
+                    width: 50%;
+                    text-align: center;
+                    letter-spacing: 1.5px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: $text-black;
+                    &:nth-child(2) {
+                        border-right: none;
+                    }
+                    &:hover {
+                        background: $black;
+                        color: $white;
+                    }
+                }
+            }
+            .orders-list {
+                display: flex;
+                flex-direction: column;
+                background: $white;
+                margin-top: 5rem;
+                .orders-item {
+                    display: flex;
+                    border-bottom: 0.5px solid #D5D6D7;
+                    padding: 3.25rem 2.5rem;
+                    img {
+                        width: 16rem;
+                        height: 21rem;
+                        margin-right: 5.5rem;
+                    }
+                    .info {
+                        font-weight: 500;
+                        font-size: 1.75rem;
+                        letter-spacing: 1px;
+                        .in-work {
+                            font-weight: 600;
+                            font-size: 1.5rem;
+                            letter-spacing: 0.7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
